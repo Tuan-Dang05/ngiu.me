@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>ngiu.me</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="./background.css" rel="stylesheet" type="text/css">
+        <link href="./ngiu.css" rel="stylesheet" type="text/css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:ital@1&family=Edu+SA+Beginner&family=Pacifico&display=swap" rel="stylesheet">
+    </head>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+       .dashboard {
+        display: block; 
+        margin-left: auto;
+        margin-right: auto;
+        width: 480px;
+        height: 680px;
+        background-image: url(./img/bg.jpg);
+        background-size: cover;
+    }
+    .dashboard h3{
+    font-weight: bolder;
+    text-align: center;
+    padding-top: 20px;
+    font-size: 22px;
+    background: linear-gradient(to right, #6cd0ff 0%, #e6ff58 100%); 
+    font-family: 'Pacifico', cursive;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+  /* HEART TO */
+  canvas {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+      }
+      #pinkboard {
+        position: relative;
+        margin: auto;
+        height: 500px;
+        width: 500px;
+        margin-top: -130px;
+        margin-left: -10px;
+        animation: animate 1.3s infinite;
+      }
+       
+      #pinkboard:before, #pinkboard:after {
+        content: '';
+        position: absolute;
+        background: #FF5CA4;
+        width:100px;
+        height: 160px;
+        border-top-left-radius: 50px;
+        border-top-right-radius: 50px;
+      }
+       
+      #pinkboard:before {
+        left: 100px;
+        transform: rotate(-45deg);
+        transform-origin: 0 100%;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25),
+                    0 10px 10px rgba(0,0,0,0.22);
+      }
+       
+      #pinkboard:after {
+        left: 0;
+        transform: rotate(45deg);
+        transform-origin: 100% 100%;
+      }
+       
+      @keyframes animate {
+        0% {
+          transform: scale(1);
+        }
+        30% {
+          transform: scale(.8);
+        }
+        60% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+    <body>
+        <section class="stars-container">
+          
+            <div class="container">
+              <div id="stars"></div>
+              <div id="stars2"></div>
+              <div id="stars3"></div>
+              <div class="row">
+                <div class="col-sm-6 col-xs-12"></div>
+              </div>
+            </div>
+            <div class="dashboard">
+                <h3>From ThuyDuong With Love</h3>
+                <canvas id="pinkboard"></canvas>
+                <div id="clock-box">
+                    <div id="clock">
+                      <p>0</p>
+                      <h4>Ngày</h4>
+                      <div class="run-test" >
+                        <h1>
+                          <a href="" class="typewrite" data-period="2000" data-type='[ "Dear, my darling!!", "Nếu cuộc đời chỉ toàn điều dối trá,", "Mình về nhà,", "đóng cửa và thương nhau.","....","Cái tên ấy...","dù bao lâu đi nữa","thì ở mỗi lần vô tình nhìn thấy,","hay nghe người khác nhắc đến,","trái tim đều sẽ bất giác mà rung lên.","....","Anh Yêu Em" ]' style="color: #96ee1c;text-decoration: none;">
+                            <span class="wrap"></span>
+                          </a>
+                        </h1>
+                      </div>
+                      
+                      <div class="heart1">
+                        <img class="img" src="./img/tuandang.jpg" alt="Tuan_dang" />
+                        <!-- <h4 class="tuandang">Tún 🍉</h4> -->
+                        <div class="tuandang">Tún 🍉</div>
+                        <i id="mars" class="fa fa-mars"></i>
+                        <span id="tuan_dang">
+                          00
+                        </span>
+                        <span class="song_tu">
+                         ♊️ Song Tử
+                        </span>
+                        <i id="venus" class="fas fa-venus"></i>
+                        <span id="thuy_duong">
+                          00
+                        </span>
+                        <span class="bo_cap">
+                         ♏️ Bọ Cạp
+                         </span>
+                        <canvas id="pinkboard2" >
+                          
+                        </canvas>
+
+                             </div>
+                      <div class="heart2">
+                        
+                      <img class="img2" src="./img/thuyduong.jpg" alt="Thuy_Duong" />
+                      <div class="thuyduong">Bé Du 🍑</div>
+                      
+                      <canvas id="pinkboard3"></canvas>
+                      
+                      </div>
+                      
+                      <svg width="100" height="100" xmlns="http://www.w3.org/2000/svg">
+                        <g class="pathdraw" id="Layer_1">
+                  <path id="svg_1" d="m190.5,288.2l42.5,-0.2l5,-12l7,12l5,0l8,-48l12,80l10,-33l13,0l5,-7l3,0l5,-10l5,17l42.5,0," />
+                        </g>
+                        
+                    </svg>
+
+                  </div>
+                  
+            </div>
+          </div>
+          <div class="bg">
+            <h3>Đồng Hồ Been Love Memory</h3>
+            <div class="line"></div>
+            <div class="countup" id="countup1">
+                <!-- năm -->
+                <span class="timeel years" style="color: rgb(166, 255, 0);">00</span>
+                <span class="timeel months" style="color: rgb(0, 242, 255);">00</span>
+                <span class="timeel weeks" style="color: rgb(246, 36, 43);">00</span>
+                <span class="timeel days" style="color: rgb(255, 255, 0);">00</span>
+                <span class="timeel hours" style="color: rgb(255, 0, 238);">00</span>
+                <span class="timeel minutes" style="color: rgb(255, 174, 0);">00</span>
+                <span class="timeel seconds" style="color: rgb(255, 255, 255);">00</span>
+            </br>
+                <span class="timeel timeRefYears" style="color: rgb(166, 255, 0); margin-left: 33px;">năm</span>
+                <!-- tháng -->
+                <span class="timeel timeRefMonths" style="color: rgb(0, 242, 255); margin-left: 30px;">tháng</span>
+                <!-- tuần -->
+                <span class="timeel timeRefWeeks" style="color: rgb(246, 36, 43); margin-left: 25px;">tuần</span>
+                <!-- ngày -->
+                <span class="timeel timeRefDays" style="color: rgb(255, 255, 0); margin-left: 32px;">ngày</span>
+                <!-- giờ -->
+                <span class="timeel timeRefHours" style="color: rgb(255, 0, 238); margin-left: 39px;">giờ</span>
+                <!-- phút -->
+                <span class="timeel timeRefMinutes" style="color: rgb(255, 174, 0); margin-left: 40px;">phút</span>
+                <!-- giây -->
+                <!-- <p style="color: rgb(255, 255, 255); margin-left: 410px; margin-top: -15px;"> giây</p> -->
+                <span class="timeel timeRefSeconds"><p style="color: rgb(255, 255, 255); margin-left: 410px; margin-top: -15px;"> giây</p></span>
+            </div>
+            <h4 class="fil" > ❤️ 24/4/2022 ❤️</h4>
+          </div>
+          </section>
+          
+            
+            <script src="./ngiu.js"></script>
+            <script src="./heart.js"></script>
+            <script src="./heart2.js"></script>
+            <script src="./heart3.js"></script>
+    </body>
+
+</html>

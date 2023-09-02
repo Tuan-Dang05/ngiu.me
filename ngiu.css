@@ -1,0 +1,278 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Edu+SA+Beginner&display=swap');
+
+
+.head h3{
+  font-weight: bolder;
+  text-align: center;
+  margin-top: -70px;
+  background: linear-gradient(to right, #fc9bff 0%, #d2e016 100%); 
+  font-family: 'Patrick Hand', cursive;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#clock-box p{
+  background: -webkit-linear-gradient(#ffffff, #15fbff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  margin-top: -275px;
+  text-align: center;
+  font-size: 29px;
+  font-weight: bolder;
+  font-family: 'Edu SA Beginner', cursive;
+}
+#clock-box h4{
+  color:#e1ef1e;
+  text-align: center;
+  margin-top: 12px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 15px;
+
+}
+
+/* run test */
+
+.run-test h1{
+  font-size: 15px;
+
+  margin: 0px 100px -87px;
+  text-align: center;
+  margin-top: 70px;
+}
+span {
+
+  animation: caret 0.5s steps(1) infinite;
+}
+
+@keyframes caret {
+  50% {
+    border-color: transparent;
+  }
+
+}
+
+.img {
+    position: relative;
+    left: 17%;
+    /* top: 59%; */
+    transform: translate(-50%, -50%);
+    width: 105px;
+    height: 105px;
+    margin-top: 170px;
+    /* position: fixed; */
+  }
+  
+  #pinkboard2 {
+    position: relative;
+    top: 0%;
+    left: -33%;
+    height: 429px;
+    /* margin-left: 100px; */
+    margin-top:-318px;
+  }
+  
+  .heart1 img {
+    /* width: 200px; */
+    /* position: fixed; */
+    background-size: cover;
+    aspect-ratio: 1;
+    object-fit: cover;
+    --_m: radial-gradient(#000 69%, #0000 70%) 84.5% fill/100%;
+    -webkit-mask-box-image: var(--_m);
+    mask-border: var(--_m);
+    clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+  }
+  /* SMALL HEART 2 */
+  
+  .img2 {
+    position: fixed;
+    transform: translate(-50%, -50%);
+    width: 105px;
+    height: 105px;
+
+  }
+  
+  #pinkboard3 {
+    position: relative;
+    top: 0%;
+    left: 30%;
+    margin-left: 17px;
+    height: 420px;
+    margin-top: -435px;
+    margin-bottom: 595px;
+  }
+  
+  .heart2 img {
+    /* width: 200px; */
+    /* position: fixed; */
+    /* z-index: 1; */
+    margin-left: 400px;
+    margin-top: -215px;
+    /* background-color: #96ee1c; */
+    aspect-ratio: 1;
+    object-fit: cover;
+    --_m: radial-gradient(#000 69%, #0000 70%) 84.5% fill/100%;
+    -webkit-mask-box-image: var(--_m);
+    mask-border: var(--_m);
+    clip-path: polygon(-41% 0, 50% 91%, 141% 0);
+  }
+
+
+  /* BEATING */
+  svg{
+  
+    height: 500px;
+    width: 500px;
+    position: absolute;
+    /* background-color: chartreuse; */
+    z-index: 1;
+    
+    top: 54%;
+
+    left: 48%;
+    transform: translate(-50%,-50%);
+    filter: drop-shadow(0 0 25px #eb07b2);
+}
+.pathdraw{
+    stroke: #30f0f7;
+    fill: transparent;
+    stroke-width: 3.5px;
+    animation: beating 4s linear infinite;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+      
+}
+
+@keyframes beating {
+    to{
+        stroke-dashoffset: 0;
+        opacity: 1;
+    }
+}
+.tuandang{
+  color: rgb(209, 248, 51);
+  font-size: 20px;
+  margin-top:-68px ;
+  margin-left: 60px;
+  font-weight: bolder;
+  /* padding-top: auto; */
+
+}
+.thuyduong{
+  color: rgb(240, 252, 67);
+  font-size: 20px;
+  margin-top:-169px ;
+  margin-right: 32px;
+  float: right;
+  /* padding-top: auto; */
+
+}
+#tuan_dang{
+  width: 80px;
+  height: 60px;
+  background-color: #9be4ff;
+  color: #ff4c15;
+  border-radius: 0px 15px 15px 0px;
+  padding: 1px 6px 1px 1px;
+  margin: 0px 2px 0px 25px
+}
+#mars{
+color: rgb(90, 5, 112);
+background-color: #9be4ff;
+
+border-radius: 15px 0px 0px 15px;
+padding: 4px 10px 4px 5px;
+margin: 5px -37px 0px 25px;
+}
+.song_tu{
+  width: 80px;
+  height: 60px;
+  background-color: #f5ff9b;
+  color: #ff15ff;
+  
+  border-radius: 15px;
+  padding: 0px 4px 0px 4px;
+}
+/* DUONG */
+#thuy_duong{
+  width: 80px;
+  height: 60px;
+  background-color: #9be4ff;
+  color: #ff4c15;
+  border-radius: 0px 15px 15px 0px;
+  padding: 1px 6px 1px 1px;
+  margin: 0px 2px 0px 25px
+}
+#venus{
+color: rgb(90, 5, 112);
+background-color: #9be4ff;
+border-radius: 15px 0px 0px 15px;
+padding: 4px 10px 4px 5px;
+margin: 5px -37px 0px 196px;
+}
+.bo_cap{
+  width: 80px;
+  height: 60px;
+  background-color: #f5ff9b;
+  color: #ff15ff;
+  border-radius: 15px;
+  padding: 0px 5px 0px 5px;
+}
+
+
+/* been memory love  */
+
+
+
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  
+}
+body{
+  /* background-image: url(./img/thuyduong.jpg); */
+  background-color: black;
+}
+.bg{
+  width: 470px;
+  height: 150px;
+  background-color: rgba(233, 233, 233, 0.295);
+  margin: 0 auto;
+  border-radius: 7px;
+  margin-top: -165px;
+  z-index: 1;
+  
+}
+.bg h3{
+  color: white;
+  font-family: 'Indie Flower', cursive;
+  text-align: center;
+  padding: 5px 0px 5px;
+}
+.bg .line{
+  width: 470px;
+  height: 1px;
+  margin-bottom: 15px;
+  background-color: rgba(255, 255, 255, 0.839);
+}
+.countup .years,.months,.weeks,.days,.hours,.minutes,.seconds{
+  margin: 0px -4px 0px 20px;
+padding: 0px 10px 0px 23px;
+
+}
+.fil{
+  color: rgb(236, 177, 252);
+  text-align: center;
+  margin-top:5px;
+
+  /* background-color: aqua; */
+  /* width: 120px; */
+}
+
+
+
+  
