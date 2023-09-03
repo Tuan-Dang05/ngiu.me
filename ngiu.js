@@ -1,4 +1,4 @@
-const yourDate = new Date("Aug 3, 2023 00:00:00");
+const yourDate = new Date("Apr 4, 2022 00:00:00");
 document.addEventListener('DOMContentLoaded', function(){
     document.querySelector("p").textContent = Math.floor( Math.floor((new Date() - yourDate) / 1000) / 60 / 60 / 24 +1);
 
