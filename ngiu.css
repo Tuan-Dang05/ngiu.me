@@ -25,7 +25,6 @@
   margin-top: 12px;
   font-family: 'Patrick Hand', cursive;
   font-size: 15px;
-
 }
 
 /* run test */
@@ -37,7 +36,6 @@
   margin-top: 70px;
 }
 span {
-
   animation: caret 0.5s steps(1) infinite;
 }
 
@@ -51,12 +49,10 @@ span {
 .img {
     position: relative;
     left: 15%;
-    /* top: 59%; */
     transform: translate(-50%, -50%);
     width: 100px;
     height: 100px;
     margin-top: 160px;
-    /* position: fixed; */
   }
   
   #pinkboard2 {
