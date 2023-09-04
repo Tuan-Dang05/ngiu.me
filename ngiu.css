@@ -34,7 +34,6 @@
 
 .run-test h1{
   font-size: 15px;
-
   margin: 0px 100px -87px;
   text-align: center;
   margin-top: 70px;
@@ -53,27 +52,25 @@ span {
 
 .img {
     position: relative;
-    left: 17%;
+    left: 15%;
     /* top: 59%; */
     transform: translate(-50%, -50%);
-    width: 105px;
-    height: 105px;
-    margin-top: 170px;
+    width: 100px;
+    height: 100px;
+    margin-top: 160px;
     /* position: fixed; */
   }
   
   #pinkboard2 {
     position: relative;
     top: 0%;
-    left: -33%;
-    height: 429px;
+    left: -35%;
+    height: 395px;
     /* margin-left: 100px; */
-    margin-top:-318px;
+    margin-top:-295px;
   }
   
   .heart1 img {
-    /* width: 200px; */
-    /* position: fixed; */
     background-size: cover;
     aspect-ratio: 1;
     object-fit: cover;
@@ -87,28 +84,24 @@ span {
   .img2 {
     position: fixed;
     transform: translate(-50%, -50%);
-    width: 105px;
-    height: 105px;
+    width: 95px;
+    height: 95px;
 
   }
   
   #pinkboard3 {
     position: relative;
     top: 0%;
-    left: 30%;
-    margin-left: 17px;
-    height: 420px;
-    margin-top: -435px;
+    left: 35%;
+    /* margin-left: 17px; */
+    height: 395px;
+    margin-top: -397px;
     margin-bottom: 595px;
   }
   
   .heart2 img {
-    /* width: 200px; */
-    /* position: fixed; */
-    /* z-index: 1; */
-    margin-left: 400px;
-    margin-top: -215px;
-    /* background-color: #96ee1c; */
+    margin-left: 355px;
+    margin-top: -194px;
     aspect-ratio: 1;
     object-fit: cover;
     --_m: radial-gradient(#000 69%, #0000 70%) 84.5% fill/100%;
@@ -120,21 +113,16 @@ span {
 
   /* BEATING */
   svg{
-  
     height: 500px;
     width: 500px;
     position: absolute;
-    /* background-color: chartreuse; */
-    z-index: 1;
-    
-    top: 54%;
-
-    left: 48%;
+    margin-top: -820px;
+    margin-left: 186px;
     transform: translate(-50%,-50%);
     filter: drop-shadow(0 0 25px #eb07b2);
 }
 .pathdraw{
-    stroke: #30f0f7;
+    stroke: #e3ff59;
     fill: transparent;
     stroke-width: 3.5px;
     animation: beating 4s linear infinite;
@@ -152,8 +140,8 @@ span {
 .tuandang{
   color: rgb(209, 248, 51);
   font-size: 20px;
-  margin-top:-68px ;
-  margin-left: 60px;
+  margin-top:-69px ;
+  margin-left: 50px;
   font-weight: bolder;
   /* padding-top: auto; */
 
@@ -161,8 +149,8 @@ span {
 .thuyduong{
   color: rgb(240, 252, 67);
   font-size: 20px;
-  margin-top:-169px ;
-  margin-right: 32px;
+  margin-top:-159px ;
+  margin-right: 15px;
   float: right;
   /* padding-top: auto; */
 
@@ -182,7 +170,7 @@ background-color: #9be4ff;
 
 border-radius: 15px 0px 0px 15px;
 padding: 4px 10px 4px 5px;
-margin: 5px -37px 0px 25px;
+margin: 5px -37px 0px 15px;
 }
 .song_tu{
   width: 80px;
@@ -193,6 +181,8 @@ margin: 5px -37px 0px 25px;
   border-radius: 15px;
   padding: 0px 4px 0px 4px;
 }
+
+
 /* DUONG */
 #thuy_duong{
   width: 80px;
@@ -201,14 +191,15 @@ margin: 5px -37px 0px 25px;
   color: #ff4c15;
   border-radius: 0px 15px 15px 0px;
   padding: 1px 6px 1px 1px;
-  margin: 0px 2px 0px 25px
+  margin: 0px 2px 0px 26px;
+  
 }
 #venus{
 color: rgb(90, 5, 112);
 background-color: #9be4ff;
 border-radius: 15px 0px 0px 15px;
 padding: 4px 10px 4px 5px;
-margin: 5px -37px 0px 196px;
+margin: 5px -37px 0px 145px;
 }
 .bo_cap{
   width: 80px;
@@ -238,7 +229,7 @@ body{
   background-color: black;
 }
 .bg{
-  width: 470px;
+  width: 400px;
   height: 150px;
   background-color: rgba(233, 233, 233, 0.295);
   margin: 0 auto;
@@ -251,26 +242,24 @@ body{
   color: white;
   font-family: 'Indie Flower', cursive;
   text-align: center;
+  margin-left: 70px;
   padding: 5px 0px 5px;
 }
 .bg .line{
-  width: 470px;
+  width: 400px;
   height: 1px;
   margin-bottom: 15px;
   background-color: rgba(255, 255, 255, 0.839);
 }
 .countup .years,.months,.weeks,.days,.hours,.minutes,.seconds{
   margin: 0px -4px 0px 20px;
-padding: 0px 10px 0px 23px;
+padding: 0px 0px 0px 22px;
 
 }
 .fil{
   color: rgb(236, 177, 252);
   text-align: center;
-  margin-top:5px;
-
-  /* background-color: aqua; */
-  /* width: 120px; */
+  margin-top:15px;
 }
 
 
