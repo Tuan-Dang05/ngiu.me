@@ -5,8 +5,8 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href="css/style.css" rel="stylesheet">
-        <link href="./background.css" rel="stylesheet" type="text/css">
-        <link href="./ngiu.css" rel="stylesheet" type="text/css">
+        <link href="./css/background.css" rel="stylesheet" type="text/css">
+        <link href="./css/ngiu.css" rel="stylesheet" type="text/css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
@@ -25,7 +25,7 @@
         margin-left: auto;
         margin-right: auto;
         width: 100%;
-        max-width: 480px;
+        max-width: 420px;
         height: 100%;
         max-height: 710px;
         background-image: url(./img/bg.jpg);
@@ -54,7 +54,7 @@
         height: 500px;
         width: 500px;
         margin-top: -130px;
-        margin-left: -10px;
+        margin-left: -40px;
         animation: animate 1.3s infinite;
       }
        
@@ -181,28 +181,73 @@
             </br>
                 <span class="timeel timeRefYears" style="color: rgb(166, 255, 0); margin-left: 33px;">năm</span>
                 <!-- tháng -->
-                <span class="timeel timeRefMonths" style="color: rgb(0, 242, 255); margin-left: 30px;">tháng</span>
+                <span class="timeel timeRefMonths" style="color: rgb(0, 242, 255); margin-left: 20px;">tháng</span>
                 <!-- tuần -->
-                <span class="timeel timeRefWeeks" style="color: rgb(246, 36, 43); margin-left: 25px;">tuần</span>
+                <span class="timeel timeRefWeeks" style="color: rgb(246, 36, 43); margin-left: 14px;">tuần</span>
                 <!-- ngày -->
-                <span class="timeel timeRefDays" style="color: rgb(255, 255, 0); margin-left: 32px;">ngày</span>
+                <span class="timeel timeRefDays" style="color: rgb(255, 255, 0); margin-left: 18px;">ngày</span>
                 <!-- giờ -->
-                <span class="timeel timeRefHours" style="color: rgb(255, 0, 238); margin-left: 39px;">giờ</span>
+                <span class="timeel timeRefHours" style="color: rgb(255, 0, 238); margin-left: 29px;">giờ</span>
                 <!-- phút -->
-                <span class="timeel timeRefMinutes" style="color: rgb(255, 174, 0); margin-left: 40px;">phút</span>
+                <span class="timeel timeRefMinutes" style="color: rgb(255, 174, 0); margin-left: 30px;">phút</span>
                 <!-- giây -->
                 <!-- <p style="color: rgb(255, 255, 255); margin-left: 410px; margin-top: -15px;"> giây</p> -->
-                <span class="timeel timeRefSeconds"><p style="color: rgb(255, 255, 255); margin-left: 410px; margin-top: -22px;"> giây</p></span>
+                <span class="timeel timeRefSeconds"><p style="color: rgb(255, 255, 255); margin-left: 343px; margin-top: -23px;"> giây</p></span>
             </div>
             <h4 class="fil" > ❤️ 24/4/2022 ❤️</h4>
           </div>
           </section>
-          
-            
-            <script src="./ngiu.js"></script>
-            <script src="./heart.js"></script>
-            <script src="./heart2.js"></script>
-            <script src="./heart3.js"></script>
-    </body>
 
+            
+            <script src="./js/ngiu.js"></script>
+            <script src="./js/heart.js"></script>
+            <script src="./js/heart2.js"></script>
+            <script src="./js/heart3.js"></script>
+    </body>
+<script>
+   window.onload = function() {
+            // Month Day, Year Hour:Minute:Second, id-of-element-container
+            countUpFromTime("Apr 24, 2022 00:00:00", 'countup1'); // ****** Change this line!
+          };
+          function countUpFromTime(countFrom, id) {
+            countFrom = new Date(countFrom).getTime();
+          
+            var now = new Date(),
+                countFrom = new Date(countFrom),
+                timeDifference = (now - countFrom);
+                
+            var secondsInADay = 60 * 60 * 1000 * 24, // ( 1 ngày = 24 giờ * 60 phút * 60 giây * 1000ms) 86.400
+                secondsInAHour = 60 * 60 * 1000;     // ( 1 giờ = 60 phút * 60 giây * 1000ms) 3600
+            years = Math.floor(timeDifference / (secondsInADay * 365))
+            months = Math.floor(timeDifference / (secondsInADay * 31)) //2592000s
+            weeks = Math.floor(timeDifference  / (secondsInADay * 7)); 
+            days = Math.floor(timeDifference / (secondsInADay) + 1);
+            hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1); //24
+            mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
+            secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
+            if (months > 12) {
+              months = Math.floor(timeDifference / (secondsInADay * 31)) - 12;
+            } 
+            if (weeks > 4){
+              weeks = Math.floor(timeDifference / (secondsInADay * 7)) % 4;
+            }
+            if (days > 31){
+              days = Math.floor(timeDifference / (secondsInADay) + 1)%31;
+            }
+       
+            
+            var idEl = document.getElementById(id);
+            idEl.getElementsByClassName('years')[0].innerHTML = years;
+            idEl.getElementsByClassName('months')[0].innerHTML = months;
+            idEl.getElementsByClassName('weeks')[0].innerHTML = weeks;
+            idEl.getElementsByClassName('days')[0].innerHTML = days;
+            idEl.getElementsByClassName('hours')[0].innerHTML = hours;
+            idEl.getElementsByClassName('minutes')[0].innerHTML = mins;
+            idEl.getElementsByClassName('seconds')[0].innerHTML = secs;
+          
+            clearTimeout(countUpFromTime.interval);
+            countUpFromTime.interval = setTimeout(function(){ countUpFromTime(countFrom, id); }, 1000);
+            
+          }
+</script>
 </html>
