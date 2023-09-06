@@ -1,6 +1,6 @@
 const yourDate = new Date("Apr 24, 2022 00:00:00");
 document.addEventListener('DOMContentLoaded', function(){
-    document.querySelector("p").textContent = Math.floor( Math.floor((new Date() - yourDate) / 1000) / 60 / 60 / 24 +1);
+    document.querySelector("p").textContent = Math.floor( Math.floor((new Date() - yourDate) / 1000) / 60 / 60 / 24);
 
 }, false);
 
