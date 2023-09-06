@@ -222,7 +222,7 @@
             years = Math.floor(timeDifference / (secondsInADay * 365))
             months = Math.floor(timeDifference / (secondsInADay * 31)) //2592000s
             weeks = Math.floor(timeDifference  / (secondsInADay * 7)); 
-            days = Math.floor(timeDifference / (secondsInADay) + 1);
+            days = Math.floor(timeDifference / (secondsInADay));
             hours = Math.floor((timeDifference % (secondsInADay)) / (secondsInAHour) * 1); //24
             mins = Math.floor(((timeDifference % (secondsInADay)) % (secondsInAHour)) / (60 * 1000) * 1);
             secs = Math.floor((((timeDifference % (secondsInADay)) % (secondsInAHour)) % (60 * 1000)) / 1000 * 1);
