@@ -97,8 +97,64 @@
           transform: scale(1);
         }
       }
+        .btn {
+        color: #f30404;
+        border: 1px solid cyan;
+        margin-top: 26px;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        margin-left: 110px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 7px;
+        background-image: linear-gradient(to bottom, rgb(203, 209, 197) 0%, rgb(60, 250, 250) 100%), linear-gradient(to bottom, red 0%, blue 100%);
+
+      }
+      .btn2 {
+        color: #32edfe;
+        border: 1px solid cyan;
+        margin-top: 27px;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        margin-left: 475px;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        text-align: center;
+        padding-top: 7px;
+        background-image: linear-gradient(to bottom, rgb(58, 67, 49) 0%, rgb(250, 92, 60) 100%), linear-gradient(to bottom, red 0%, blue 100%);
+
+      }
+      .btn,.btn2{
+        animation: float 5s ease-in-out infinite;
+    }
+    @keyframes float {
+        0%{
+            box-shadow: 0 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translateY(0px);
+        }
+        50%{
+            box-shadow: 0 25px 15px 0px rgba(0,0,0,0.2);
+            transform: translateY(-8px);
+        }
+        100%{
+            box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.6);
+            transform: translateY(0px);
+        }
+        
+    }
     </style>
     <body>
+        <a href="./index2.html" target="_self">
+          <i class="fas fa-heartbeat btn" style="position: fixed;"></i>
+        </a>
+        <a href="https://www.facebook.com/" target="_self">
+          <i class="fas fa-envelope btn2"></i>
+        </a>
         <section class="stars-container">
           
             <div class="container">
