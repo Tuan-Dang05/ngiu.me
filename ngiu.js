@@ -1,6 +1,6 @@
 const yourDate = new Date("Apr 24, 2022 00:00:00");
 document.addEventListener('DOMContentLoaded', function(){
-    document.querySelector("p").textContent = Math.floor( Math.floor((new Date() - yourDate) / 1000) / 60 / 60 / 24);
+    document.querySelector("p").textContent = Math.floor( Math.floor((new Date() - yourDate) / 1000) / 60 / 60 / 24 +1);
 
 }, false);
 
@@ -69,7 +69,7 @@ function calculate_age(dob) {
 }
 
 // document.write(calculate_age(new Date(2005, 11, 9))+"<br/>");
-var duong = calculate_age(new Date(2005, 11, 9));
+var duong = calculate_age(new Date(2004, 11, 9));
 var tuan = calculate_age(new Date(2005, 5, 26));
 var d = document.getElementById('thuy_duong');
 var t = document.getElementById('tuan_dang');
