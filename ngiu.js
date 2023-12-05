@@ -1,6 +1,6 @@
 const yourDate = new Date("Apr 24, 2022 00:00:00");
 document.addEventListener('DOMContentLoaded', function(){
-   conratulation = document.querySelector("p").textContent = Math.floor( Math.floor((new Date() - yourDate) / 1000) / 60 / 60 / 24 +1);
+   conratulation = document.querySelector("p").textContent = Math.floor( Math.floor((new Date() - yourDate) / 1000) / 60 / 60 / 24 );
     if (conratulation == 600){
       setTimeout(function() {
               location.href = './conratulation/conra.html';
